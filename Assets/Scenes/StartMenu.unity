@@ -3308,7 +3308,7 @@ MonoBehaviour:
   isGlobal: 1
   blendDistance: 0
   weight: 1
-  priority: 0
+  priority: 5
 --- !u!4 &1194854342
 Transform:
   m_ObjectHideFlags: 0

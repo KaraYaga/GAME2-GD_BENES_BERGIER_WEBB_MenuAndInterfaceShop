@@ -14,10 +14,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private RawImage popUpImage;
     [SerializeField] TextMeshProUGUI popUpName, popUpRarity, popUpPrice;
 
-    private Sprite shopItemImage;
-    private int shopItemPrice;
     private float gold;
-    private string shopItemName, shopItemRarity;
 
     private void Start()
     {

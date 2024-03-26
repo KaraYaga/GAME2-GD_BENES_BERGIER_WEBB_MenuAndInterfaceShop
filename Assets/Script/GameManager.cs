@@ -1,11 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private float goldStart;
+
+    [Header("PopUp")]
+    [SerializeField] GameObject popUp;
+    [SerializeField] private RawImage popUpImage;
+    [SerializeField] TextMeshProUGUI popUpName, popUpRarity, popUpPrice;
 
     private Sprite shopItemImage;
     private int shopItemPrice;
@@ -21,9 +28,11 @@ public class GameManager : MonoBehaviour
     {
         ObjectData shopItem = button.GetComponent<ObjectData>();
 
-        shopItemName = shopItem.data.ID;
-        shopItemRarity = shopItem.data.rarity;
-        shopItemPrice = shopItem.data.price;
-        shopItemImage = shopItem.data.image;
+        popUpPrice.text = "" + shopItem.data.price;
+        popUpName.text = shopItem.data.ID;
+        popUpRarity.text = shopItem.data.rarity;
+        popUpImage.texture = shopItem.data.image;
+
+        popUp.SetActive(true);
     }
 }

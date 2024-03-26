@@ -6,7 +6,7 @@ using UnityEngine;
 public class ObjectScript : ScriptableObject
 {
     public string ID;
-    public Sprite image;
+    public Texture2D image;
     public int price;
     public string rarity;
 }

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Key
   m_EditorClassIdentifier: 
   ID: Key To The Underworld
-  image: {fileID: 21300000, guid: 49b2501207c15f849a662343469336ac, type: 3}
+  image: {fileID: 2800000, guid: 49b2501207c15f849a662343469336ac, type: 3}
   price: 2560000
   rarity: Legendary

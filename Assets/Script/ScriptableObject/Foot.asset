@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Foot
   m_EditorClassIdentifier: 
   ID: Rabbit Foot
-  image: {fileID: 21300000, guid: 43837132a1dabc14490148f7ec8bdacc, type: 3}
+  image: {fileID: 2800000, guid: 43837132a1dabc14490148f7ec8bdacc, type: 3}
   price: 10
   rarity: Common

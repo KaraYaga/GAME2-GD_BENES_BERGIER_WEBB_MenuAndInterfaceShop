@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52d5a98dab3f2874581b343b89830b1d, type: 3}
   m_Name: Dagger
   m_EditorClassIdentifier: 
-  Name: Ceremonial Dagger
+  ID: Ceremonial Dagger
   image: {fileID: 21300000, guid: ba8ef19057bf68746a7820cd6ac340ae, type: 3}
   price: 50000
   rarity: Rare

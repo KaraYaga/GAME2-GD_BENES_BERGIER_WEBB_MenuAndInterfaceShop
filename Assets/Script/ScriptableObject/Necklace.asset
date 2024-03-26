@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52d5a98dab3f2874581b343b89830b1d, type: 3}
   m_Name: Necklace
   m_EditorClassIdentifier: 
-  Name: Cursed Necklace
+  ID: Cursed Necklace
   image: {fileID: 21300000, guid: 2b2d1332cc7f41c40aced6ad2aa82fa1, type: 3}
   price: 666
   rarity: Uncommon

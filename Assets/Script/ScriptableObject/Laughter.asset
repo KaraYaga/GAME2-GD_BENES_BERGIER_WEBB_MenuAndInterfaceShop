@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52d5a98dab3f2874581b343b89830b1d, type: 3}
   m_Name: Laughter
   m_EditorClassIdentifier: 
-  Name: Bottled Laughter
+  ID: Bottled Laughter
   image: {fileID: 21300000, guid: 8d6899413c195404988b0f72639b56a4, type: 3}
   price: 240
   rarity: Uncommon

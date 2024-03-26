@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52d5a98dab3f2874581b343b89830b1d, type: 3}
   m_Name: Key
   m_EditorClassIdentifier: 
-  Name: Key to the Undeworld
+  ID: Key To The Underworld
   image: {fileID: 21300000, guid: 49b2501207c15f849a662343469336ac, type: 3}
   price: 2560000
   rarity: Legendary

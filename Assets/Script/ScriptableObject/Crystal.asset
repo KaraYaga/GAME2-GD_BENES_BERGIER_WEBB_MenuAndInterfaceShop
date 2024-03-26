@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52d5a98dab3f2874581b343b89830b1d, type: 3}
   m_Name: Crystal
   m_EditorClassIdentifier: 
-  Name: Cluster Crystal
+  ID: Cluster Crystal
   image: {fileID: 21300000, guid: 49f2dea3d7d51b245af96994fd602b09, type: 3}
   price: 25
   rarity: Common

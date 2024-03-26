@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52d5a98dab3f2874581b343b89830b1d, type: 3}
   m_Name: Foot
   m_EditorClassIdentifier: 
-  Name: Rabbit Foot
+  ID: Rabbit Foot
   image: {fileID: 21300000, guid: 43837132a1dabc14490148f7ec8bdacc, type: 3}
   price: 10
   rarity: Common

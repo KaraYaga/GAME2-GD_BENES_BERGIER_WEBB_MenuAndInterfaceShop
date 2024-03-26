@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "NewObject", menuName = "ShopObject/ObjectDetails", order = 1)]
 public class ObjectScript : ScriptableObject
 {
-    public string Name;
+    public string ID;
     public Sprite image;
     public int price;
     public string rarity;

@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 74467902}
   - component: {fileID: 74467901}
   m_Layer: 6
-  m_Name: Button_Template (3)
+  m_Name: BabysTears
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -151,7 +151,7 @@ RectTransform:
   m_GameObject: {fileID: 74467899}
   m_LocalRotation: {x: -0, y: -0, z: 0.0017464755, w: 0.9999985}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.521, y: 1.8771441, z: 1.8771441}
+  m_LocalScale: {x: 0.48192504, y: 1.8771441, z: 1.8771441}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1970960653}
@@ -1430,7 +1430,7 @@ GameObject:
   - component: {fileID: 643163780}
   - component: {fileID: 643163779}
   m_Layer: 6
-  m_Name: Button_Template (1)
+  m_Name: RabbitFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1452,7 +1452,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.2}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 119.626724, y: 38.604336}
+  m_AnchoredPosition: {x: 244.1, y: -148.6}
   m_SizeDelta: {x: 88.2456, y: 35.2401}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &643163779
@@ -1804,7 +1804,7 @@ GameObject:
   - component: {fileID: 819270513}
   - component: {fileID: 819270512}
   m_Layer: 6
-  m_Name: Button_Template (2)
+  m_Name: Laughter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1819,7 +1819,7 @@ RectTransform:
   m_GameObject: {fileID: 819270510}
   m_LocalRotation: {x: -0, y: -0, z: 0.0017464755, w: 0.9999985}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.521, y: 1.8771441, z: 1.8771441}
+  m_LocalScale: {x: 0.5946694, y: 2.1425722, z: 2.1425722}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1970960653}

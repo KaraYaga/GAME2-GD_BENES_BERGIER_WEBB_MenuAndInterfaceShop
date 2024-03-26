@@ -9,13 +9,17 @@ public class UIManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && !listIsShowing)
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            listIsShowing = !listIsShowing;
+        }
+
+        if (listIsShowing)
         {
             ingredientsList.SetActive(true);
             listIsShowing = true;
         }
-
-        if (Input.GetKeyUp(KeyCode.E) && listIsShowing)
+        else
         {
             ingredientsList.SetActive(false);
             listIsShowing = false;

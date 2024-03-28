@@ -369,7 +369,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -38, y: -1.9}
+  m_AnchoredPosition: {x: -42.9, y: -1.9}
   m_SizeDelta: {x: 69.3229, y: 15.5645}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &128139614
@@ -392,7 +392,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'You wasted your money !
+  m_text: 'You don''t have enough money !
 
     Sorry !'
   m_isRightToLeft: 0

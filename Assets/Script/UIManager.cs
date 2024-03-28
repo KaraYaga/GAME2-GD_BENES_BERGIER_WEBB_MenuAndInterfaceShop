@@ -5,11 +5,13 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     [SerializeField] private GameObject shop1Canva, shop2Canva, UI, ingredientsList, inventoryObject;
+    [SerializeField] private TextMeshProUGUI money;
     [SerializeField] private float inventorySize;
     private int numberOfItemInventory;
     private bool listIsShowing = false;
     private ObjectData shopItem;
     private GameObject objectButton;
+    private GameManager gameManager;
 
     [Header("PopUp")]
     [SerializeField] GameObject popUp;
@@ -18,11 +20,14 @@ public class UIManager : MonoBehaviour
 
     private void Start()
     {
+        gameManager = GameManager.instance;
+
         shop1Canva.SetActive(false); 
         shop2Canva.SetActive(false);
         popUp.SetActive(false);
 
         numberOfItemInventory = 0;
+        money.text = "" + gameManager.GetGold();
     }
 
     private void Update()
@@ -88,14 +93,24 @@ public class UIManager : MonoBehaviour
 
     public void BuyObject()
     {
-        if(numberOfItemInventory < inventorySize)
+        if(numberOfItemInventory < gameManager.GetObjectNeeded().Count)
         {
-            GameManager.instance.AddObjectToInventory(shopItem.data);
-            popUp.SetActive(false);
-            Destroy(objectButton);
+            if(gameManager.GetGold() >= shopItem.data.price)
+            {
+                gameManager.AddObjectToInventory(shopItem.data);
+                popUp.SetActive(false);
+                Destroy(objectButton);
 
-            inventoryObject.transform.GetChild(numberOfItemInventory).GetComponent<TextMeshProUGUI>().text = shopItem.data.ID;
-            numberOfItemInventory++;
+                inventoryObject.transform.GetChild(numberOfItemInventory).GetComponent<TextMeshProUGUI>().text = shopItem.data.ID;
+                numberOfItemInventory++;
+
+                gameManager.LoseGold(shopItem.data.price);
+                money.text = "" + gameManager.GetGold();
+            }
+            else
+            {
+                //Show pop up
+            }
         }
     }
 }

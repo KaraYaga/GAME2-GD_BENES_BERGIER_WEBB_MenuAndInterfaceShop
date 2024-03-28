@@ -10,18 +10,17 @@ public class GameManager : MonoBehaviour
     [SerializeField] private List<ObjectScript> objectsNeeded;
     [SerializeField] private string GameOverScene, WinScene;
     private float gold;
-    private bool didWin;
 
     [SerializeField] private List<ObjectScript> inventoryList;
 
     private void Awake()
     {
         instance = this;
+        gold = goldStart;
     }
 
     private void Start()
     {
-        gold = goldStart;
         inventoryList = new List<ObjectScript>();
     }
 
@@ -30,7 +29,7 @@ public class GameManager : MonoBehaviour
         inventoryList.Add(obj);
         Debug.Log(obj.ID);
 
-        if(inventoryList.Count >= objectsNeeded.Count )
+        if(inventoryList.Count >= objectsNeeded.Count)
         {
             if (CheckWinCondition())
             {
@@ -54,5 +53,20 @@ public class GameManager : MonoBehaviour
         }
 
         return true;
+    }
+
+    public void LoseGold(float money)
+    {
+        gold -= money;
+    }
+
+    public float GetGold()
+    {
+        return gold;
+    }
+
+    public List<ObjectScript> GetObjectNeeded()
+    {
+        return objectsNeeded;
     }
 }

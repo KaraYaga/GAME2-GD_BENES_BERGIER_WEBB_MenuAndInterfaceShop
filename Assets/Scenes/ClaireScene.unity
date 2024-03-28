@@ -4763,7 +4763,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &994479620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4916,6 +4916,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goldStart: 1000
+  objectsNeeded:
+  - {fileID: 11400000, guid: 3fbe120f75f10674fa0d5a3f8b766523, type: 2}
+  - {fileID: 11400000, guid: efdca7b059270d6419abac736298fee5, type: 2}
+  - {fileID: 11400000, guid: 01be0693a3ef32647afb30f329200388, type: 2}
+  - {fileID: 11400000, guid: 8dfc6263fd34aa040bb186dd506420bb, type: 2}
+  - {fileID: 11400000, guid: 3deae18a81c43064f89b1f0c05d86614, type: 2}
+  inventoryList: []
 --- !u!1 &1069104046
 GameObject:
   m_ObjectHideFlags: 0

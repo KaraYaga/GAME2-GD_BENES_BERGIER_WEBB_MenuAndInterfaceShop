@@ -90,7 +90,7 @@ public class UIManager : MonoBehaviour
     {
         if(numberOfItemInventory < inventorySize)
         {
-            GameManager.instance.AddObjectToInventory(shopItem);
+            GameManager.instance.AddObjectToInventory(shopItem.data);
             popUp.SetActive(false);
             Destroy(objectButton);
 

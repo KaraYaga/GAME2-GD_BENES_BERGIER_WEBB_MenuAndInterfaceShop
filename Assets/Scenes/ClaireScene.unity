@@ -334,8 +334,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1011171600}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 1011171598}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: ShowItemData
         m_Mode: 2
         m_Arguments:
@@ -480,8 +480,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1011171600}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 1011171598}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: ShowItemData
         m_Mode: 2
         m_Arguments:
@@ -955,8 +955,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1011171600}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 1011171598}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: ShowItemData
         m_Mode: 2
         m_Arguments:
@@ -1313,14 +1313,14 @@ RectTransform:
   m_GameObject: {fileID: 149518755}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.0178924, y: 3.0178924, z: 3.0178924}
+  m_LocalScale: {x: 1.924178, y: 1.924178, z: 1.924178}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1171082766}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 174.7, y: -56.618}
+  m_AnchoredPosition: {x: 162.3, y: -36.699997}
   m_SizeDelta: {x: 69.3229, y: 15.5645}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &149518757
@@ -1343,7 +1343,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: LEGENDARY
+  m_text: 'Uncommon
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 56f556f8bff91f040b8dfe367a7d854d, type: 2}
   m_sharedMaterial: {fileID: 4199259553208472746, guid: 56f556f8bff91f040b8dfe367a7d854d, type: 2}
@@ -1377,7 +1379,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1823,8 +1825,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1011171600}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 1011171598}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: ShowItemData
         m_Mode: 2
         m_Arguments:
@@ -2089,8 +2091,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1011171600}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 1011171598}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: ShowItemData
         m_Mode: 2
         m_Arguments:
@@ -2310,8 +2312,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1011171600}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 1011171598}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: ShowItemData
         m_Mode: 2
         m_Arguments:
@@ -2508,8 +2510,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1011171600}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 1011171598}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: ShowItemData
         m_Mode: 2
         m_Arguments:
@@ -3098,8 +3100,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1011171600}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 1011171598}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: ShowItemData
         m_Mode: 2
         m_Arguments:
@@ -3318,7 +3320,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 647691661}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1011171598}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: DontBuy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &647691661
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3473,7 +3487,6 @@ GameObject:
   - component: {fileID: 755019540}
   - component: {fileID: 755019539}
   - component: {fileID: 755019538}
-  - component: {fileID: 755019541}
   m_Layer: 7
   m_Name: ShopKeep
   m_TagString: Untagged
@@ -3582,19 +3595,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 755019536}
   m_CullTransparentMesh: 1
---- !u!114 &755019541
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 755019536}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa4f5a46567009844b7ab6473962e381, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  data: {fileID: 0}
 --- !u!1 &812990507
 GameObject:
   m_ObjectHideFlags: 0
@@ -3991,14 +3991,14 @@ RectTransform:
   m_GameObject: {fileID: 978220032}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.0178924, y: 3.0178924, z: 3.0178924}
+  m_LocalScale: {x: 1.924178, y: 1.924178, z: 1.924178}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1171082766}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -109.76, y: -56.618}
+  m_AnchoredPosition: {x: -126, y: -36.699997}
   m_SizeDelta: {x: 69.3229, y: 15.5645}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &978220034
@@ -4030,8 +4030,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4291019715
-  m_fontColor: {r: 0.764151, g: 0.764151, b: 0.764151, a: 1}
+    rgba: 4278235391
+  m_fontColor: {r: 1, g: 0.6914679, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4345,6 +4345,11 @@ MonoBehaviour:
   shop2Canva: {fileID: 812990507}
   UI: {fileID: 722705946}
   ingredientsList: {fileID: 994479619}
+  popUp: {fileID: 1171082762}
+  popUpImage: {fileID: 1124372759}
+  popUpName: {fileID: 145683671}
+  popUpRarity: {fileID: 149518757}
+  popUpPrice: {fileID: 1271511152}
 --- !u!4 &1011171599
 Transform:
   m_ObjectHideFlags: 0
@@ -4373,11 +4378,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goldStart: 1000
-  popUp: {fileID: 1171082762}
-  popUpImage: {fileID: 1124372759}
-  popUpName: {fileID: 145683671}
-  popUpRarity: {fileID: 149518757}
-  popUpPrice: {fileID: 1271511152}
 --- !u!1 &1069104046
 GameObject:
   m_ObjectHideFlags: 0
@@ -4647,8 +4647,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1011171600}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 1011171598}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: ShowItemData
         m_Mode: 2
         m_Arguments:
@@ -4875,7 +4875,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1171082763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5100,15 +5100,15 @@ RectTransform:
   m_GameObject: {fileID: 1271511150}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.0178924, y: 3.0178924, z: 3.0178924}
+  m_LocalScale: {x: 1.924178, y: 1.924178, z: 1.924178}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1171082766}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -18.927, y: -56.618}
-  m_SizeDelta: {x: 69.3229, y: 15.5645}
+  m_AnchoredPosition: {x: -62.57607, y: -36.7}
+  m_SizeDelta: {x: 68.9397, y: 15.5645}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1271511152
 MonoBehaviour:
@@ -5166,7 +5166,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -5195,7 +5195,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 31.889984, w: 0}
+  m_margin: {x: 0, y: 0, z: -0.29730415, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -5519,8 +5519,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1011171600}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 1011171598}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: ShowItemData
         m_Mode: 2
         m_Arguments:
@@ -5813,8 +5813,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1011171600}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 1011171598}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: ShowItemData
         m_Mode: 2
         m_Arguments:
@@ -6105,14 +6105,14 @@ RectTransform:
   m_GameObject: {fileID: 1903212726}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.0178924, y: 3.0178924, z: 3.0178924}
+  m_LocalScale: {x: 1.924178, y: 1.924178, z: 1.924178}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1171082766}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 32.55702, y: -56.618}
+  m_AnchoredPosition: {x: 71.67501, y: -36.699997}
   m_SizeDelta: {x: 48.323, y: 15.5645}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1903212728
@@ -6144,8 +6144,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4291019715
-  m_fontColor: {r: 0.764151, g: 0.764151, b: 0.764151, a: 1}
+    rgba: 4278235391
+  m_fontColor: {r: 1, g: 0.6901961, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -6540,8 +6540,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1011171600}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 1011171598}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: ShowItemData
         m_Mode: 2
         m_Arguments:
@@ -6688,6 +6688,6 @@ SceneRoots:
   - {fileID: 722705950}
   - {fileID: 980213811}
   - {fileID: 812990511}
+  - {fileID: 1171082766}
   - {fileID: 257211726}
   - {fileID: 1011171599}
-  - {fileID: 1171082766}

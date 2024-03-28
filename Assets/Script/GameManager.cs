@@ -8,28 +8,10 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private float goldStart;
-
-    [Header("PopUp")]
-    [SerializeField] GameObject popUp;
-    [SerializeField] private RawImage popUpImage;
-    [SerializeField] TextMeshProUGUI popUpName, popUpRarity, popUpPrice;
-
     private float gold;
 
     private void Start()
     {
         gold = goldStart;
-    }
-
-    public void ShowItemData(GameObject button)
-    {
-        ObjectData shopItem = button.GetComponent<ObjectData>();
-
-        popUpPrice.text = "" + shopItem.data.price;
-        popUpName.text = shopItem.data.ID;
-        popUpRarity.text = shopItem.data.rarity;
-        popUpImage.texture = shopItem.data.image;
-
-        popUp.SetActive(true);
     }
 }

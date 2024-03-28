@@ -1,18 +1,29 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
-    [SerializeField] private GameObject shop1Canva, shop2Canva, UI, ingredientsList;
+    [SerializeField] private GameObject shop1Canva, shop2Canva, UI, ingredientsList, inventoryObject;
+    [SerializeField] private float inventorySize;
+    private int numberOfItemInventory;
     private bool listIsShowing = false;
+    private ObjectData shopItem;
+    private GameObject objectButton;
 
     [Header("PopUp")]
     [SerializeField] GameObject popUp;
     [SerializeField] private RawImage popUpImage;
     [SerializeField] TextMeshProUGUI popUpName, popUpRarity, popUpPrice;
+
+    private void Start()
+    {
+        shop1Canva.SetActive(false); 
+        shop2Canva.SetActive(false);
+        popUp.SetActive(false);
+
+        numberOfItemInventory = 0;
+    }
 
     private void Update()
     {
@@ -59,7 +70,8 @@ public class UIManager : MonoBehaviour
 
     public void ShowItemData(GameObject button)
     {
-        ObjectData shopItem = button.GetComponent<ObjectData>();
+        shopItem = button.GetComponent<ObjectData>();
+        objectButton = button;
 
         popUpPrice.text = "" + shopItem.data.price;
         popUpName.text = shopItem.data.ID;
@@ -72,5 +84,18 @@ public class UIManager : MonoBehaviour
     public void DontBuy()
     {
         popUp.SetActive(false);
+    }
+
+    public void BuyObject()
+    {
+        if(numberOfItemInventory < inventorySize)
+        {
+            GameManager.instance.AddObjectToInventory(shopItem);
+            popUp.SetActive(false);
+            Destroy(objectButton);
+
+            inventoryObject.transform.GetChild(numberOfItemInventory).GetComponent<TextMeshProUGUI>().text = shopItem.data.ID;
+            numberOfItemInventory++;
+        }
     }
 }

@@ -1,7 +1,6 @@
 using System.Collections.Generic;
-using System.Linq;
-using UnityEditor.ShaderKeywordFilter;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -9,6 +8,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private float goldStart;
     [SerializeField] private List<ObjectScript> objectsNeeded;
+    [SerializeField] private string GameOverScene, WinScene;
     private float gold;
     private bool didWin;
 
@@ -36,13 +36,13 @@ public class GameManager : MonoBehaviour
             {
                 Debug.Log("WIN");
 
-                //GoToWInScreen
+                SceneManager.LoadScene(WinScene);
             }
             else if(!CheckWinCondition())
             {
                 Debug.Log("LOSE");
 
-                //GoToGameOverScreen
+                SceneManager.LoadScene(GameOverScene);
             }
         }
     }

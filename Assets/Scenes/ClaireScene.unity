@@ -4922,6 +4922,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 01be0693a3ef32647afb30f329200388, type: 2}
   - {fileID: 11400000, guid: 8dfc6263fd34aa040bb186dd506420bb, type: 2}
   - {fileID: 11400000, guid: 3deae18a81c43064f89b1f0c05d86614, type: 2}
+  GameOverScene: GameOverMenu
+  WinScene: GameWIN
   inventoryList: []
 --- !u!1 &1069104046
 GameObject:

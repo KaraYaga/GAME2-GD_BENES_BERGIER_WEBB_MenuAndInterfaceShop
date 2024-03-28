@@ -34,14 +34,10 @@ public class GameManager : MonoBehaviour
         {
             if (CheckWinCondition())
             {
-                Debug.Log("WIN");
-
                 SceneManager.LoadScene(WinScene);
             }
             else if(!CheckWinCondition())
             {
-                Debug.Log("LOSE");
-
                 SceneManager.LoadScene(GameOverScene);
             }
         }

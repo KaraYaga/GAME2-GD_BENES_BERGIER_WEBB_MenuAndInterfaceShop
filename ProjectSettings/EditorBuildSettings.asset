@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: dd24cd7292f1c5148935f0daa94cb457
   - enabled: 1
-    path: Assets/Scenes/ClaireScene.unity
+    path: Assets/Scenes/MainScene.unity
     guid: 62dbaf414ce405c41b2aea723426e642
   - enabled: 1
     path: Assets/Scenes/GameWIN.unity

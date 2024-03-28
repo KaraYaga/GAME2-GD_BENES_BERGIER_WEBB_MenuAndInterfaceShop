@@ -14,17 +14,20 @@ public class UIManager : MonoBehaviour
     private GameManager gameManager;
 
     [Header("PopUp")]
-    [SerializeField] GameObject popUp;
     [SerializeField] private RawImage popUpImage;
+    [SerializeField] GameObject popUp, moneyPopUp, shopKeeperPopUp;
     [SerializeField] TextMeshProUGUI popUpName, popUpRarity, popUpPrice;
 
     private void Start()
     {
         gameManager = GameManager.instance;
 
+        UI.SetActive(false);
         shop1Canva.SetActive(false); 
         shop2Canva.SetActive(false);
         popUp.SetActive(false);
+        moneyPopUp.SetActive(false);
+        shopKeeperPopUp.SetActive(false);
 
         numberOfItemInventory = 0;
         money.text = "" + gameManager.GetGold();
@@ -48,13 +51,13 @@ public class UIManager : MonoBehaviour
             listIsShowing = false;
         }
 
-        if(Input.GetKey(KeyCode.Escape) && shop1Canva.activeSelf && !popUp.activeSelf)
+        if(Input.GetKey(KeyCode.Escape) && shop1Canva.activeSelf && !popUp.activeSelf && !moneyPopUp.activeSelf && !shopKeeperPopUp.activeSelf)
         {
             shop1Canva.SetActive(false);
             UI.SetActive(false);
         }
 
-        if (Input.GetKey(KeyCode.Escape) && shop2Canva.activeSelf && !popUp.activeSelf)
+        if (Input.GetKey(KeyCode.Escape) && shop2Canva.activeSelf && !popUp.activeSelf && !moneyPopUp.activeSelf && !shopKeeperPopUp.activeSelf)
         {
             shop2Canva.SetActive(false);
             UI.SetActive(false);
@@ -86,9 +89,9 @@ public class UIManager : MonoBehaviour
         popUp.SetActive(true);
     }
 
-    public void DontBuy()
+    public void ExitPopUp(GameObject popUpObject)
     {
-        popUp.SetActive(false);
+        popUpObject.SetActive(false);
     }
 
     public void BuyObject()
@@ -109,8 +112,14 @@ public class UIManager : MonoBehaviour
             }
             else
             {
-                //Show pop up
+                moneyPopUp.SetActive(true);
+                popUp.SetActive(false);
             }
         }
+    }
+
+    public void ShopKeeperInteraction()
+    {
+        shopKeeperPopUp.SetActive(true);
     }
 }

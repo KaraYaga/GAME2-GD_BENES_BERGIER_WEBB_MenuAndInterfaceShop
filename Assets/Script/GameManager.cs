@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour
             }
             else if(!CheckWinCondition())
             {
-                Debug.Log("FALSE");
+                Debug.Log("LOSE");
 
                 //GoToGameOverScreen
             }
